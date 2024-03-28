@@ -1,4 +1,13 @@
 {
+  "name": "testrepo",
+  "description": "Test project for ReportPortal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "Grigor Harutyunyan",
+  "license": "ISC",
   "dependencies": {
     "allure-playwright": "^2.15.0",
     "playwright": "^1.42.1",
@@ -9,7 +18,7 @@
     "@types/node": "^20.11.30"
   },
   "scripts": {
-    "local": "playwright test --config=playwright.local.config.ts",
-    "web": "playwright test --config=playwright.web.config.ts"
+    "local": "playwright test --config=config/playwright.local.config.ts",
+    "web": "playwright test --config=config/playwright.web.config.ts"
   }
 }
